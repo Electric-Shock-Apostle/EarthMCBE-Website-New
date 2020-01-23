@@ -1,6 +1,44 @@
-.bg-img{
-  height: 100%;
-  width: auto;
-  background-image: url('../img/background.jpg');
-  background-repeat: no-repeat;
+.text-light{
+  background: linear-gradient(to bottom right, #ecf0f1 , #f4f6f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.background-yellow{
+  background-image: linear-gradient(to bottom right,  #f39c12, #f1c40f);
+}
+
+.background-green{
+  background-image: linear-gradient(to bottom right,  #2ecc71, #52be80);
+}
+
+.background-red{
+  background-image: linear-gradient(to bottom right,  #e74c3c, #c0392b);
+}
+
+.background-violet{
+  background-image: linear-gradient(to bottom right,  #8e44ad , #9b59b6);
+}
+
+.background-cyan{
+  background-image: linear-gradient(to bottom right,  #16a085, #48c9b0);
+}
+
+.background-blue{
+  background-image: linear-gradient(to bottom right,  #3498db, #5499c7);
+}
+
+.background-pink{
+  background-image: linear-gradient(to bottom right,  #FF69B4, #FFB6C1);
+}
+
+.background-orange{
+  background-image: linear-gradient(to bottom right,  #FF6347, #FF7F50);
+}
+
+
+.background-dark{
+  background-image: linear-gradient(to bottom right,  #17202a, #566573);
 }
