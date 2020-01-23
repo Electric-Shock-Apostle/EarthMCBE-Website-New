@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EarthMCBE</title>
   <link rel="stylesheet" href="lib/css/bulma.min.css" />
+  <script src="lib/js/pace.min.js"></script>
   <script defer src="https://cdn.bootcss.com/font-awesome/5.3.1/js/all.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <style>
@@ -58,7 +59,49 @@
     .background-dark {
       background-image: linear-gradient(to bottom right, #17202a, #566573);
     }
+
+    .pace {
+      -webkit-pointer-events: none;
+      pointer-events: none;
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      -webkit-transform: translate3d(0, -50px, 0);
+      -ms-transform: translate3d(0, -50px, 0);
+      transform: translate3d(0, -50px, 0);
+
+      -webkit-transition: -webkit-transform .5s ease-out;
+      -ms-transition: -webkit-transform .5s ease-out;
+      transition: transform .5s ease-out;
+    }
+
+    .pace.pace-active {
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .pace .pace-progress {
+      display: block;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      right: 100%;
+      width: 100%;
+      height: 10px;
+      background: #29d;
+
+      pointer-events: none;
+    }
   </style>
+
 </head>
 
 <body>
@@ -146,7 +189,8 @@
             <div class="hero-body">
               <div class="container has-text-centered">
                 <p id="6" class="title">跨平台</p>
-                <i class="fab fa-android icon is-large"></i><i class="fab fa-windows icon is-large"></i><i class="fab fa-apple icon is-large"></i>
+                <i class="fab fa-android icon is-large"></i><i class="fab fa-windows icon is-large"></i><i
+                  class="fab fa-apple icon is-large"></i>
                 <p id="7" class="subtitle"></p>
               </div>
             </div>
@@ -194,19 +238,19 @@
     //lang == 'en'
     if (lang == 'zh') {
       var language = JSON.parse(zh);
-        for (i = 1; i <= 10; i++) {
-          key = "zh" + i;
-          language_text = document.getElementById(i)
-          language_text.innerHTML = language[key];
-        }
+      for (i = 1; i <= 10; i++) {
+        key = "zh" + i;
+        language_text = document.getElementById(i)
+        language_text.innerHTML = language[key];
+      }
 
     } else {
       var language = JSON.parse(en);
-        for (i = 1; i <= 10; i++) {
-          key = "en" + i;
-          language_text = document.getElementById(i)
-          language_text.innerHTML = language[key];
-        }
+      for (i = 1; i <= 10; i++) {
+        key = "en" + i;
+        language_text = document.getElementById(i)
+        language_text.innerHTML = language[key];
+      }
     }
   }()
   function start_to_play() {
