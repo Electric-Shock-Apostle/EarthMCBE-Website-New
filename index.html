@@ -239,8 +239,8 @@
     var zh = '{"zh1":"开始游戏","zh2":"开始游戏","zh3":"为了防止服务器遭到玩家破坏，服务器开启了白名单，请所有玩家加入群聊找管理员获取进入权限来进入服务器，点击此按钮加入QQ或Discord群组(两个群组的消息互通)。","zh4":"规则","zh5":"本服务器唯一规则为不允许作弊。不过我们倡议玩家之间保持一个和谐良好的游戏关系，同时对于服务器内重要建筑物希望您予以重视与保护。我们致力于创造一个优质的游戏环境，这同样需要您的配合。","zh6":"跨平台","zh7":"无论您使用什么设备，Android、IOS、Windows10、Xbox 都支持，让您随时随地都能畅玩。","zh8":"获得支持","zh9":"如果您有任何问题，请点击下方的按钮给我们写邮件，我们会尽快回复。"}';
     var en = '{"en1":"Start Playing!","en2":"Start Playing!","en3":"In order to prevent the server from being destroyed by some players, the server has enabled whitelist. Please join the group chat to ask the administrator for whitelist. Click these button to join the QQ or Discord group (the message of the two groups are exchanged).","en4":"Rules","en5":"The only rule on this server is no cheating. However, we encourage players to maintain a harmonious and good gameing relationship, and we hope that you will pay attention to and protect important buildings on the server. We are committed to creating a quality gaming environment, which also requires your cooperation.","en6":"Cross Platforms","en7":"No matter what device you use, Android, IOS, Windows 10, and Xbox, we all support it, allowing you to play anywhere, anytime.","en8":"Get Support","en9":"If you have any questions, please click the button below to write us an email and we will reply as soon as possible."}'
     var lang = navigator.language || navigator.userLanguage;//常规浏览器语言和IE浏览器
-    //lang = lang.substr(0, 2);//截取lang前2位字符
-    lang == 'en'
+    lang = lang.substr(0, 2);//截取lang前2位字符
+    //lang == 'en'
     if (lang == 'zh') {
       var language = JSON.parse(zh);
       document.getElementById("video_container").innerHTML='<iframe height="100%" width="100%" src="//player.bilibili.com/player.html?aid=84805492&cid=145030560&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>'
