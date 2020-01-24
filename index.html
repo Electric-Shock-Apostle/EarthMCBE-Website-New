@@ -34,6 +34,7 @@
     .background-cyan {
       background-image: linear-gradient(to bottom right, #16a085, #48c9b0);
     }
+
     .background-pink {
       background-image: linear-gradient(to bottom right, #FF69B4, #FFB6C1);
     }
@@ -46,12 +47,15 @@
     .background-dark {
       background-image: linear-gradient(to bottom right, #17202a, #566573);
     }
+
     .background-yellow {
       background-image: linear-gradient(to bottom right, #FF9800, #FFCC80);
     }
+
     .background-green {
       background-image: linear-gradient(to bottom right, #4CAF50, #AED581);
     }
+
     .background-blue {
       background-image: linear-gradient(to bottom right, #03A9F4, #64B5F6);
     }
@@ -103,7 +107,8 @@
 <body>
 
   <!-- 网页的头-开始 -->
-  <div id="welcome" class="hero is-fullheight" style="background: url('lib/img/background-1.jpg')center center; background-size:cover;">
+  <div id="welcome" class="hero is-fullheight"
+    style="background: url('lib/img/background-1.jpg')center center; background-size:cover;">
     <div class="hero-body">
       <div class="container columns">
         <div class="column">
@@ -114,7 +119,8 @@
                   <img border="0" src="lib/img/logo_200px.png" alt="EarthMC Bedrock Edition"
                     title="EarthMC Bedrock Edition" /> </a>
                 <p class="title">EarthMCBE</p>
-                <button id="1" class="button is-normal is-light is-rounded" onclick="start_to_play()">Start to Play</button>
+                <button id="1" class="button is-normal is-light is-rounded" onclick="start_to_play()">Start to
+                  Play</button>
               </div>
             </div>
           </div>
@@ -122,8 +128,12 @@
         <div class="column">
           <div class="hero" style="background-color: rgba(0, 0, 0, 0);">
             <div class="hero-body">
-              <div id="video_player" class="container has-text-centered">
-                <iframe src="//player.bilibili.com/player.html?aid=84672088&cid=144812302&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%;height: 100%;"> </iframe>
+              <div class="container">
+                <div id="video_player" class="container has-text-centered">
+                  <iframe src="//player.bilibili.com/player.html?aid=84672088&cid=144812302&page=1" scrolling="no"
+                    border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                    style="width: 100%;height: 100%;"> </iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -139,7 +149,8 @@
   <!-- 网页的头-结束 -->
 
   <!-- 网页的身体-开始 -->
-  <div id="info" class="hero is-light is-bold" style="background: url('lib/img/background-2.jpg')center center; background-size:cover;display: none;">
+  <div id="info" class="hero is-light is-bold"
+    style="background: url('lib/img/background-2.jpg')center center; background-size:cover;display: none;">
     <div class="hero-head has-text-centered" onclick="go_back()">
       <span class="icon">
         <i class="fas fa-chevron-up fa-lg"></i>
