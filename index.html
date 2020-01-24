@@ -10,6 +10,11 @@
   <script defer src="https://cdn.bootcss.com/font-awesome/5.3.1/js/all.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <style>
+    body,
+    html {
+      overflow-x: hidden;
+    }
+
     .container.columns {
       margin-left: auto;
       margin-right: auto;
@@ -118,7 +123,7 @@
                 <a class="target=&quot;_blank&quot;" href="index.html">
                   <img border="0" src="lib/img/logo_200px.png" alt="EarthMC Bedrock Edition"
                     title="EarthMC Bedrock Edition" /> </a>
-                <p class="title">EarthMCBE</p>
+                <p class="title has-text-dark">EarthMCBE</p>
                 <button id="1" class="button is-normal is-light is-rounded" onclick="start_to_play()">Start to
                   Play</button>
               </div>
@@ -128,18 +133,14 @@
         <div class="column">
           <div class="hero is-primary" style="background-color: rgba(238,238,238, 0.7); height: 100%;">
             <div class="hero-body" style="padding: 0px;">
-              <div class="container has-text-centered" style="height: 100%;">
-                <iframe height="100%" width="100%" src="//player.bilibili.com/player.html?aid=83028098&cid=142026556&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+              <div id="video_container" class="container has-text-centered" style="height: 100%;">
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
     <div class="hero-foot has-text-centered">
-      <span class="icon">
-        <i class="fas fa-chevron-down fa-lg"></i>
-      </span>
     </div>
   </div>
   <!-- 网页的头-结束 -->
@@ -147,10 +148,12 @@
   <!-- 网页的身体-开始 -->
   <div id="info" class="hero is-light is-bold"
     style="background: url('lib/img/background-2.jpg')center center; background-size:cover;display: none;">
-    <div class="hero-head has-text-centered" onclick="go_back()">
-      <span class="icon">
-        <i class="fas fa-chevron-up fa-lg"></i>
-      </span>
+    <div class="hero-head has-text-centered" style="padding-top: 1rem;">
+      <button class="button is-light is-rounded" onclick="go_back()">
+        <span class="icon">
+          <i class="fas fa-chevron-up fa-lg"></i>
+        </span>  
+      </button>
     </div>
     <div class="hero-body">
       <div class="container columns">
@@ -192,8 +195,7 @@
             <div class="hero-body">
               <div class="container has-text-centered">
                 <p id="6" class="title">跨平台</p>
-                <i class="fab fa-android icon is-large"></i><i class="fab fa-windows icon is-large"></i><i
-                  class="fab fa-apple icon is-large"></i>
+                <i class="fab fa-android icon is-large"></i><i class="fab fa-apple icon is-large"></i><i class="fab fa-windows icon is-large"></i><i class="fab fa-xbox icon is-large"></i>
                 <p id="7" class="subtitle"></p>
               </div>
             </div>
@@ -241,6 +243,7 @@
     //lang == 'en'
     if (lang == 'zh') {
       var language = JSON.parse(zh);
+      document.getElementById("video_container").innerHTML='<iframe height="100%" width="100%" src="//player.bilibili.com/player.html?aid=83028098&cid=142026556&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>'
       for (i = 1; i <= 10; i++) {
         key = "zh" + i;
         language_text = document.getElementById(i)
