@@ -30,91 +30,6 @@
       margin-right: auto;
     }
 
-    .text-light {
-      background: linear-gradient(to bottom right, #ecf0f1, #f4f6f7);
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-      text-fill-color: transparent;
-    }
-
-    .background-red {
-      background-image: linear-gradient(to bottom right, #e74c3c, #c0392b);
-    }
-
-    .background-violet {
-      background-image: linear-gradient(to bottom right, #8e44ad, #9b59b6);
-    }
-
-    .background-cyan {
-      background-image: linear-gradient(to bottom right, #16a085, #48c9b0);
-    }
-
-    .background-pink {
-      background-image: linear-gradient(to bottom right, #FF69B4, #FFB6C1);
-    }
-
-    .background-orange {
-      background-image: linear-gradient(to bottom right, #FF6347, #FF7F50);
-    }
-
-
-    .background-dark {
-      background-image: linear-gradient(to bottom right, #17202a, #566573);
-    }
-
-    .background-yellow {
-      background-image: linear-gradient(to bottom right, #FF9800, #FFCC80);
-    }
-
-    .background-green {
-      background-image: linear-gradient(to bottom right, #4CAF50, #AED581);
-    }
-
-    .background-blue {
-      background-image: linear-gradient(to bottom right, #03A9F4, #64B5F6);
-    }
-
-    .pace {
-      -webkit-pointer-events: none;
-      pointer-events: none;
-
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-
-      -webkit-transform: translate3d(0, -50px, 0);
-      -ms-transform: translate3d(0, -50px, 0);
-      transform: translate3d(0, -50px, 0);
-
-      -webkit-transition: -webkit-transform .5s ease-out;
-      -ms-transition: -webkit-transform .5s ease-out;
-      transition: transform .5s ease-out;
-    }
-
-    .pace.pace-active {
-      -webkit-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    .pace .pace-progress {
-      display: block;
-      position: fixed;
-      z-index: 2000;
-      top: 0;
-      right: 100%;
-      width: 100%;
-      height: 10px;
-      background: #29d;
-
-      pointer-events: none;
-    }
   </style>
 
 </head>
@@ -122,29 +37,36 @@
 <body>
 
   <!-- 网页的头-开始 -->
-  <div id="welcome" class="hero is-fullheight"
-    style="background: url('lib/img/background-1.jpg')center center; background-size:cover;">
+  <div class="hero is-fullheight" style="background: url('lib/img/background-1.jpg')center center; background-size:cover;">
     <div class="hero-body">
       <div class="container columns">
-        <div class="column is-one-third">
-          <div class="hero is-primary" style="background-color: rgba(238,238,238, 0.7); border-radius:25px;">
-            <div class="hero-body">
-              <div class="container has-text-centered">
+        <div class="column">
+          <div class="hero" style="background-color: rgba(38,50,56, 0.9); border-radius:10px;">
+            <div class="hero-body has-text-centered">
+              <div class="container">
                 <a class="target=&quot;_blank&quot;" href="index.html">
-                  <img border="0" src="lib/img/logo_200px.png" alt="EarthMC Bedrock Edition"
-                    title="EarthMC Bedrock Edition" /> </a>
-                <p class="title has-text-dark">EarthMCBE</p>
-                <button id="1" class="button is-normal is-light is-rounded" onclick="start_to_play()"></button>
+                  <img border="0" src="lib/img/logo_200px.png" alt="EarthMC Bedrock Edition" title="EarthMC Bedrock Edition" />
+                </a>
+                <p class="title is-1" style="color:#2196F3;">EarthMCBE</p>
+                <p class="is-5" style="color:#4CAF50;">A Real World</p>
+                <p class="is-5" style="color:#4CAF50;">一个真实的世界</p>
+                <br>
+                <a target="_blank" href="https://forum.earthmcbe.space/" class="button is-light is-rounded" alt="EarthMCBE Forum" title="EarthMCBE Forum"><i class="fas fa-comments fa-lg" style="color:#00796B;"></i></a>
+                <a target="_blank" href="https://docs.earthmcbe.space/" class="button is-light is-rounded" alt="EarthMCBE Docs" title="EarthMCBE Docs"><i class="fas fa-book fa-lg" style="color:#E64A19;"></i></a>
+                <a target="_blank" href="https://map.earthmcbe.space/" class="button is-light is-rounded" alt="DynMap" title="DynMap"><i class="fas fa-map fa-lg" style="color:#5D4037;"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div class="column">
-          <div class="hero is-primary" style="background-color: rgba(255, 255, 255, 0); height: 100%;">
-            <div class="hero-body" style="padding: 0px;">
-              <div id="video_container" class="container has-text-centered" style="height: 100%;">
-                <iframe src="//player.bilibili.com/player.html?aid=84818335&cid=145054714&page=1" scrolling="no"
-                  border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <div class="hero" style="background-color: rgba(38,50,56, 0.9); border-radius:10px; height: 100%;">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <p class="title is-2" style="color:#F57F17;">Start Playing</p>
+                <p class="subtitle is-4" style="color:#FBC02D;">开始游戏</p>
+                <br>
+                <a target="_blank" href="minecraft://?addExternalServer=§eEarthMCBE CN Line|server.earthmcbe.space:21061" class="button is-rounded">🇨🇳 CN Line</a>
+                <a target="_blank" href="minecraft://?addExternalServer=§eEarthMCBE HK Line|server-hk.earthmcbe.space:21061" class="button is-rounded">🇭🇰 HK Line</a>
               </div>
             </div>
           </div>
@@ -156,148 +78,23 @@
   </div>
   <!-- 网页的头-结束 -->
 
-  <!-- 网页的身体-开始 -->
-  <div id="info" class="hero is-light is-bold"
-    style="background: url('lib/img/background-2.jpg')center center; background-size:cover;display: none;">
-    <div class="hero-head has-text-centered" style="padding-top: 1rem;">
-      <button class="button is-light is-rounded" onclick="go_back()">
-        <span class="icon">
-          <i class="fas fa-chevron-up fa-lg"></i>
-        </span>
-      </button>
-    </div>
-    <div class="hero-body">
-      <div class="container columns">
-        <div class="column animated bounceIn delay-1s">
-          <div class="hero background-green" style="border-radius:25px;">
-            <div class="hero-body">
-              <div class="container has-text-centered">
-                <p id="2" class="title"></p>
-                <p id="3" class="subtitle"></p>
-                <a target="_blank" href="https://forum.earthmcbe.space/" class="button is-light is-rounded"><i class="fas fa-comments fa-lg"></i></a>
-                <a target="_blank" href="https://docs.earthmcbe.space/" class="button is-light is-rounded"><i class="fas fa-book fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column animated fadeInDown delay-1s">
-          <div class="hero background-yellow" style="border-radius:25px;">
-            <div class="hero-body">
-              <div class="container has-text-centered">
-                <p id="4" class="title"></p>
-                <p id="5" class="subtitle"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container columns">
-        <div class="column animated lightSpeedIn delay-2s">
-          <div class="hero background-cyan" style="border-radius:25px;">
-            <div class="hero-body">
-              <div class="container has-text-centered">
-                <p id="6" class="title"></p>
-                <p class="title">
-                  <i class="fab fa-android"></i>
-                  <i class="fab fa-apple"></i>
-                  <i class="fab fa-windows"></i>
-                  <i class="fab fa-xbox"></i>
-                </p>
-                <p id="7" class="subtitle"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column animated jackInTheBox delay-2s">
-          <div class="hero background-pink" style="border-radius:25px;">
-            <div class="hero-body">
-              <div class="container has-text-centered">
-                <p id="8" class="title"></p>
-                <p id="9" class="subtitle"></p>
-                <button class="button is-light is-rounded" id="11" onclick="formalplayer_info()"></button>
-                <a href="mailto:support@earthmcbe.space" class="button is-light is-rounded"><i class="fas fa-envelope fa-lg"></i></a>
-              </div>
+
+  <div class="hero" style="background-color: rgb(38,50,56);">
+    <div class="hero-foot">
+      <div class="container">
+        <div class="hero" style="background-color: rgb(38,50,56);">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <i class="fas fa-heart" style="color: #EC407A;"></i>
+              <p style="color: #fafafa;">EarthMC BE Developr Team</p>
+              <p style="color: #fafafa;">All Rights Reserved</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="hero-foot has-text-centered">
-    </div>
-  </div>
-  <div id="formalplayer_info" class="notification is-info animated bounceInDown"
-    style="display: none;width: 50%;position:absolute;left:25%;top:50%;margin: 0 0 0 0;">
-    <button class="delete" onclick="formalplayer_close()"></button>
-    <p id="10"></p>
   </div>
 
 
-
-  <!--网页的身体-结束-->
-  <!--网页的脚-开始-->
-  <div class="footer">
-    <div class="hero">
-      <div class="hero-foot">
-        <div class="container has-text-centered">
-          <i class="fas fa-heart"></i>
-          <p>EarthMC BE Developr Team</p>
-          <p>All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--网页的脚-结束-->
 </body>
-<script>
-  !function () {
-    var zh = '{"zh1":"开始游戏","zh2":"开始游戏","zh3":"<strong>国内线路:server.earthmcbe.space:21061<br>香港线路:server-hk.earthmcbe.space:21061<br></strong>加入论坛和查看玩家文档，请点击按钮。","zh4":"规则","zh5":"本服务器唯一规则为不允许作弊。不过我们倡议玩家之间保持一个和谐良好的游戏关系，同时对于服务器内重要建筑物希望您予以重视与保护。我们致力于创造一个优质的游戏环境，这同样需要您的配合。","zh6":"跨平台","zh7":"无论您使用什么设备，Android、IOS、Windows10、Xbox 都支持，让您随时随地都能畅玩。","zh8":"获得支持","zh9":"如果您有任何问题，请点击下方的按钮给我们写邮件，我们会尽快回复。","zh10":"首先声明[服务器用不以盈利方式运营]<br>什么是正式玩家？<br>•正式玩家能体验到 完整的EarthMC玩法<br>•非正式玩家无法体验 国家玩法<br>如何成为正式玩家？<br>•只需加入QQ群或者discord群来完成调查问卷以便于通过验证（类似于哔哩哔哩的正式会员验证，在此感谢哔哩哔哩带来的灵感）<br>•过程完全免费，不收取任何费用","zh11":"了解正式玩家"}';
-    var en = '{"en1":"Start Playing!","en2":"Start Playing!","en3":"<strong>China Line:server.earthmcbe.space:21061<br>HongKong Line:server-hk.earthmcbe.space:21061<br></strong>To join forums and view offical docs, click the button to learn more.","en4":"Rules","en5":"The only rule on this server is no cheating. However, we encourage players to maintain a harmonious and good gameing relationship, and we hope that you will pay attention to and protect important buildings on the server. We are committed to creating a quality gaming environment, which also requires your cooperation.","en6":"Cross Platforms","en7":"No matter what device you use, Android, IOS, Windows 10, and Xbox, we all support it, allowing you to play anywhere, anytime.","en8":"Get Support","en9":"If you have any questions, please click the button below to write us an email and we will reply as soon as possible.","en10":"First declare that [the server does not operate in a profitable way] <br> What is a regular player? <br> • Regular players can experience the complete EarthMC gameplay <br> • Informal players cannot experience the national gameplay <br> > How to become a regular player? <br> • Just join the QQ group or discord group to complete the questionnaire in order to pass the verification (similar to the official membership verification of Bilibili, thanks for the inspiration from Bilibili) <br> • The process is completely free and does not charge any fees","en11":"Know about Formal Player"} ';
-    var lang = navigator.language || navigator.userLanguage;//常规浏览器语言和IE浏览器
-    lang = lang.substr(0, 2);//截取lang前2位字符
-    //lang == 'en'
-    if (lang == 'zh') {
-      var language = JSON.parse(zh);
-      document.getElementById("video_container").innerHTML = '<iframe height="100%" width="100%" src="//player.bilibili.com/player.html?aid=84818335&cid=145054714&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>'
-      for (i = 1; i <= 11; i++) {
-        key = "zh" + i;
-        language_text = document.getElementById(i)
-        language_text.innerHTML = language[key];
-      }
-
-    } else {
-      var language = JSON.parse(en);
-      document.getElementById("video_container").innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3l18oI9jRII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      for (i = 1; i <= 11; i++) {
-        key = "en" + i;
-        language_text = document.getElementById(i)
-        language_text.innerHTML = language[key];
-      }
-    }
-  }()
-  function start_to_play() {
-    document.getElementById("info").classList.remove("animated", "zoomIn", "zoomOut");
-    document.getElementById("welcome").classList.add("animated", "zoomOut");
-    setTimeout(function () {
-      document.getElementById("welcome").style.display = "none";
-      document.getElementById("info").style.display = "";
-      document.getElementById("info").classList.add("animated", "zoomIn");
-    }, 1000);
-  }
-  function go_back() {
-    document.getElementById("welcome").classList.remove("animated", "zoomIn", "zoomOut");
-    document.getElementById("info").classList.add("animated", "zoomOut");
-    setTimeout(function () {
-      document.getElementById("info").style.display = "none";
-      document.getElementById("welcome").style.display = "";
-      document.getElementById("welcome").classList.add("animated", "zoomIn");
-    }, 1000);
-  }
-  function formalplayer_info() {
-    document.getElementById("formalplayer_info").style.display="";
-  }
-  function formalplayer_close() {
-    document.getElementById("formalplayer_info").style.display="none";
-  }
-</script>
-
 </html>
