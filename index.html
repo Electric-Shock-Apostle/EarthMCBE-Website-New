@@ -4,97 +4,117 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EarthMCBE</title>
+  <title>NEW</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-  <script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <script defer src="https://cdn.bootcss.com/font-awesome/5.3.1/js/all.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155744470-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-155744470-1');
-  </script>
-
-  <style>
-    body,
-    html {
-      overflow-x: hidden;
-    }
-
-    .container.columns {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-  </style>
-
 </head>
 
-<body style="background: url('lib/img/background-1.jpg')center center; background-size:cover;">
+<body>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
-  <!-- 网页的头-开始 -->
-  <div class="hero is-fullheight">
-    <div class="hero-body">
-      <div class="container columns">
-        <div class="column">
-          <div class="hero" style="background-color: rgb(38,50,56); border-radius:15px;">
-            <div class="hero-body has-text-centered">
-              <div class="container">
-                <a class="target=&quot;_blank&quot;" href="index.html">
-                  <img border="0" src="lib/img/logo_200px.png" alt="EarthMC Bedrock Edition" title="EarthMC Bedrock Edition" />
-                </a>
-                <p class="title is-2" style="color:#2196F3;">EarthMCBE</p>
-                <p class="is-5" style="color:#4CAF50;">A Real World</p>
-                <p class="is-5" style="color:#4CAF50;">一个真实的世界</p>
-                <br>
-                <a target="_blank" href="https://forum.earthmcbe.space/" style="background-color: #E0E0E0;" class="button is-rounded" alt="EarthMCBE Forum" title="EarthMCBE Forum"><i class="fas fa-comments fa-lg" style="color:#00796B;"></i></a>
-                <a target="_blank" href="https://docs.earthmcbe.space/" style="background-color: #E0E0E0;" class="button is-rounded" alt="EarthMCBE Docs" title="EarthMCBE Docs"><i class="fas fa-book fa-lg" style="color:#E64A19;"></i></a>
-                <a target="_blank" href="https://map.earthmcbe.space/" style="background-color: #E0E0E0;" class="button is-rounded" alt="DynMap" title="DynMap"><i class="fas fa-map fa-lg" style="color:#5D4037;"></i></a>
-              </div>
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+  </script>
+
+  <div class="hero is-fullheight" style="background: url('img/bg-1.png')center center; background-size:cover;">
+    <div class="hero-head">
+      <nav class="navbar is-light is-fixed-top" style="background-color:rgba(255,255,255, 0.1)">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+            <img src="img/logo-grey.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                HOME
+              </a>
+              <a class="navbar-item">
+                DOCS
+              </a>
+              <a class="navbar-item">
+                MAP
+              </a>
+              <a class="navbar-item">
+                DONATE
+              </a>
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="hero" style="background-color: rgb(38,50,56); border-radius:15px; height: 100%;">
-            <div class="hero-body">
-              <div class="container has-text-centered">
-                <p class="title is-2" style="color:#F57F17;">Start Playing</p>
-                <p class="subtitle is-4" style="color:#FBC02D;">开始游戏</p>
-                <br>
-                <p style="color:#00BCD4;">服务器开启白名单请去论坛答题</p>
-                <p style="color:#00BCD4;">Server open whitelist, please go to forum to answer questions</p>
-                <br>
-                <br>
-                <a target="_blank" href="minecraft://?addExternalServer=§eEarthMCBE CN Line|server.earthmcbe.space:21061" style="width:100%">🇨🇳 CN Line</a>
-                <p style="color:#FF7043;">server.earthmcbe.space:21061</p>
-                <br>
-                <a target="_blank" href="minecraft://?addExternalServer=§eEarthMCBE HK Line|server-hk.earthmcbe.space:21061" style="width:100%">🇭🇰 HK Line</a>
-                <p style="color:#FF7043;">server-hk.earthmcbe.space:21061</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </nav>
     </div>
-    <div class="hero-foot has-text-centered">
+    <div class="hero-body" style="margin: 0 auto;">
+
+          <div class="container has-text-centered">
+            <h1 class="title" style="font-size: 5em; color: #F5F5F5;">F R I E N D</h1>
+            <h2 class="subtitle" style="font-size: 2em; color: #F5F5F5;">WELCOME HOME</h2>
+          </div>
+
+    </div>
+    <div class="hero-foot">
+
     </div>
   </div>
-  <!-- 网页的头-结束 -->
 
 
-  <div class="hero">
+  <div class="hero is-dark is-fullheight" style="background: url('img/bg-2.png')center center; background-size:cover;">
     <div class="hero-body">
       <div class="container">
-        <div class="hero" style="background-color: rgb(38,50,56); border-radius:15px;">
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <i class="fas fa-heart" style="color: #EC407A;"></i>
-              <p style="color: #BDBDBD;">EarthMC BE Developr Team</p>
-              <p style="color: #BDBDBD;">All Rights Reserved</p>
+        <div class="columns">
+          <div class="column is-4">
+            <div class="hero">
+              <div class="hero-body">
+                <div class="container">
+                  <h1 class="title is-1">EarthMCBE <br /> Survival</h1>
+                  <h2 class="subtitle">Lovely server, it's very good, come on now.</h2>
+                  <br />
+                  <a href="" class="button is-success title is-4" style="width: 70%; background-color: #2ecc71;">Play Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="hero">
+              <div class="hero-body">
+                <div class="container">
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -102,6 +122,46 @@
     </div>
   </div>
 
+  <div class="hero is-dark is-fullheight" style="background: url('img/bg-4.png')center center; background-size:cover;">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="hero">
+              <div class="hero-body">
+                <div class="container">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="hero">
+              <div class="hero-body">
+                <div class="container">
+                  <h1 class="title is-1">DuckRamen <br /> Mini Games</h1>
+                  <h2 class="subtitle">joy, love, fun</h2>
+                  <br />
+                  <a href="" class="button is-success title is-4" style="width: 70%; background-color: #2ecc71;">Fun Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero is-black">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <i class="fas fa-heart" style="color: #EC407A;"></i>
+        <p>Electric Shock Apostle</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
