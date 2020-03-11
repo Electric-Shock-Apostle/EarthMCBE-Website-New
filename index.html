@@ -50,77 +50,58 @@ if ($navbarBurgers.length > 0) {
 });
   </script>
 
-  <div id="1p" class="hero is-fullheight" style="background: url('img/bg-1.webp')center center; background-size:cover;">
-    <div class="hero-head">
-      <nav class="navbar is-light is-fixed-top" style="background-color:rgba(255,255,255, 0.1)">
-        <div class="container">
-          <div class="navbar-brand">
-            <a href="index.html" class="navbar-item is-active">
-            <img src="img/logo-grey.webp" alt="Logo">
+<nav class="navbar is-light is-fixed-top" style="background-color:rgba(255,255,255, 0.1)">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="index.html" class="navbar-item is-active">
+      <img src="img/logo-grey.webp" alt="Logo">
+      </a>
+      <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenuHeroA" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item is-active">
+          HOME
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            EarthMCBE
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a target="_blank" href="docs/" class="navbar-item">
+              Docs
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active">
-                HOME
-              </a>
-
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  EarthMCBE
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a target="_blank" href="docs/" class="navbar-item">
-                    Docs
-                  </a>
-                  <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item">
-                    DynMap
-                  </a>
-                  <a target="_blank" href="donate/" class="navbar-item">
-                    Donate
-                  </a>
-                </div>
-              </div>
-
-              <a class="navbar-item">
-                DuckRamen
-              </a>
-            </div>
+            <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item">
+              DynMap
+            </a>
+            <a target="_blank" href="donate/" class="navbar-item">
+              Donate
+            </a>
           </div>
         </div>
-      </nav>
-    </div>
-    <div class="hero-body" style="margin: 0 auto;">
 
-      <div class="hero" style="background-color: rgba(255,255,255, 0.3); border-radius: 1em;">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title" style="font-size: 3em; color: #263238;">WECLOME</h1>
-            <h2 class="subtitle" style="font-size: 1em; color: #212121;">Minecraft Servers for You</h2>
-          </div>
-        </div>
+        <a class="navbar-item">
+          DuckRamen
+        </a>
       </div>
-
-
-    </div>
-    <div class="hero-foot has-text-centered">
-      <a href="#2p"><i class="fas fa-arrow-down" style="color: #F5F5F5; font-size: 2em;"></i></a>
     </div>
   </div>
+</nav>
 
 
-  <div id="2p" class="hero is-dark is-fullheight" style="background: url('img/bg-2.webp')center center; background-size:cover;">
+
+  <div class="hero is-dark is-fullheight" style="background: url('img/bg-2.webp')center center; background-size:cover;">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-5">
-            <div class="hero" style="background-color: rgba(255,255,255, 0.3); border-radius: 1em;">
+            <div class="hero" style="background-color: rgba(255,255,255); border-radius: 1em;">
               <div class="hero-body">
                 <div class="container">
                   <h1 class="title is-3" style="color:#263238;">EarthMCBE <br /> Survival</h1>
@@ -150,12 +131,9 @@ if ($navbarBurgers.length > 0) {
         </div>
       </div>
     </div>
-    <div class="hero-foot has-text-centered">
-      <a href="#3p"><i class="fas fa-arrow-down" style="color: #F5F5F5; font-size: 2em;"></i></a>
-    </div>
   </div>
 
-  <div id="3p" class="hero is-dark is-fullheight" style="background: url('img/bg-4.webp')center center; background-size:cover;">
+  <div class="hero is-dark is-fullheight" style="background: url('img/bg-4.webp')center center; background-size:cover;">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
@@ -169,9 +147,9 @@ if ($navbarBurgers.length > 0) {
             </div>
           </div>
           <div class="column is-5">
-            <div class="hero" style="background-color: rgba(255,255,255, 0.3); border-radius: 1em;">
+            <div class="hero" style="background-color: rgba(255,255,255); border-radius: 1em;">
               <div class="hero-body">
-                <div class="container">
+                <div class="container has-text-centered">
                   <h1 class="title is-3" style="color: #263238;">DuckRamen <br /> Mini Games</h1>
                   <h2 class="subtitle" style="color: #212121;">joy, love, fun</h2>
                   <br />
@@ -182,9 +160,6 @@ if ($navbarBurgers.length > 0) {
           </div>
         </div>
       </div>
-    </div>
-    <div class="hero-foot has-text-centered">
-      <a href="#1p"><i class="fas fa-arrow-up" style="color: #F5F5F5; font-size: 2em;"></i></a>
     </div>
   </div>
 
