@@ -1,4 +1,4 @@
-这是所有Factions命令的列表。 稍后将对它们分别进行详细说明。
+这是所有Factions命令的列表。 稍后将对它们分别进行详细说明。  
 /f ?,h,help [page=1] get help  
 /f list [page=1] list all factions  
 /f f,faction [faction=you] show faction information  
@@ -151,43 +151,43 @@
 /f access view vies access  
 /f access player <player> [yes/no=toggle] grant player access  
 /f access faction <faction> [yes/no=toggle] grant player access  
-**Sometimes you might want to give someone access to a specific chunk rather than all of you faction. That is the point of of access. With access you can give either a player or a faction the ability to build, open chests and interact in one specific chunk.
-To see who has access in the chunk you are standing in type /f access view. To grant a player access in the chunk you are standing in type /f access player <playerName> yes and when you decide to take it away type /f access player <playerName> no. To grant a faction access in the chunk you are standing in type /f access faction <factionName> yes and when you decide to take it away type /f access faction <factionName> no.**
-###### Relations
-**This section covers the following commands:**  
+**有时，您可能希望授予某人访问特定块而不是所有人的权限。 那就是访问点。 有了访问权限，您就可以让玩家或派系建立，打开箱子并在一个特定的块中进行交互的能力。
+要查看谁有权访问该块，您可以站在区块中输入/f access view。 要授予玩家访问块的权限，您可以键入/f access player <playerName>，当您决定将其移除时，键入/f access player <playerName> no。 要授予块中的派系访问权限，您必须站在区块中输入 /f access faction <factionName> yes，当您决定将其拿走时，键入/f access faction <factionName> no。**
+###### 关系
+**本节介绍以下命令：**  
 /f relation manage faction relations  
 /f relation set <faction> <relation> set relation wish to another faction  
 /f relation list [page=1] [faction=you] [relations=all] list all factions with certain relation  
 /f relation wishes [page=1] [faction=you] list the relation wishes  
-**Two factions can have a relation between them. Per default the relation is neutral, but it can be changed to Enemy, Truce or Ally. The relation between the two factions is equal to the lowest wished relation between them. So if one wishes to be enemies and the other wishes to be truced, the enemy wish will prevail. If the Faction that wishes to be enemies then changes their wish to truce they will become truce because now both Factions wish to be truced.**  
+**两个派系之间可以有关系。 默认情况下，该关系是中性的，但可以将其更改为敌人，休战或同盟。 两个派系之间的关系等于它们之间的最低期望关系。 因此，如果一个人希望成为敌人，而另一个人希望被搁置，那么敌人的愿望将占上风。 如果希望成为敌人的派系改变了停战的意愿，那么它们将变得停战，因为现在两个派系都希望被搁置。**  
 
-| Wishes | Enemy | Neutral | Truce | Ally |
+|愿望|敌人|中立|休战|盟友|
 | --- | --- | --- | --- | --- |
-|Enemy|Enemy|Enemy|Enemy|Enemy|
-|Neutral|Enemy|Neutral|Neutral|Neutral|
-|Truce|Enemy|Neutral|Truce|Truce|
-|Ally|Enemy|Neutral|Truce|Ally|
+|敌人|敌人|敌人|敌人|敌人|
+|中性|敌人|中性|中性|中性|
+|停战|敌人|中立|停战|停战|
+|盟友|敌人|中立|停战|盟友|
 
-**To set your wished to another faction type /f relation set <faction> <relation>. If you wished to be enemies you are now enemies, if you wish to be truced or allied the other faction must respond by setting the same relation wish.
-To then see your relations type /f relation list and if you need to see the next page type /f relation list 2, to only see allies type /f relation list ally to see for another faction type /f relation list <factionName>. Now mix and match page, relation type and faction, to see the third page of enemies for the Faction Kalmar, type /f faction relation list 3 kalmar enemy.
-If you would rather want to see relation wishes. That is not your current relations, but the relations you wish to have, type /f relation wishes.**
-###### Permissions
-**In this section the following commands are covered:**  
+**要将您的期望设置为另一个派系类型，请/f relation set <faction> <relation>。 如果您希望成为敌人，那么您现在就是敌人，如果您希望被迫与盟友结盟，另一派别必须通过设置相同的关系愿望来做出回应。
+然后要查看您的关系类型/f relation list，并且如果您需要查看下一页类型/f relation list 2，则仅查看盟友键入/f relation list ally以查看其他派系类型/f relation list <factionName>。 现在混合并匹配页面，关系类型和派系，以查看Faction Kalmar的敌人的第三页，键入 /f faction relation list 3 kalmar enemy。
+如果您想看到亲戚的愿望。 那不是您当前的关系，而是您希望拥有的关系，键入 /f relation wishes。**
+###### 权限
+**本节介绍以下命令：**  
 /f perm change faction permissions  
 /f perm list [page=1] list perms  
 /f perm show <perm>[faction=you ]show who has perm  
 /f perm view <rank/rel/player/faction> [faction=you] view perms given to  
 /f perm viewall <rank/rel/player/faction> [faction=you] view all perms held by  
 /f perm set <perm> <rank/rel/player/faction> <yes/no> [faction=you] set perms  
-**A faction has a list of permissions, that is who can do what. A permission can be given to either a rank, a. player, a relation, everyone in another faction or a specific rank in another faction.
-To list all permissions type /f perm list. To show who has a specific perm type /f perm show <perm> per default permissions are only granted to ranks within your faction and a few perms are given to allies, but if you have changed it that will be displayed here.
-If you want to know what permissions are specifically given to someone do /f perm view <someone>. If you want to check a rank, let’s say Officer, do /f perm view Officer to check allies do /f perm view ally, to check a player Madus you would do /f perm view Madus, to check a specific faction, let’s say Kalmar, do /f perm view Kalmar and to check permissions specifically given to officers of Kalmar do /f perm view Kalmar-Officer. This allows a high degree of granularity. Do you have a super-duper-best-friend ally, that is more important than your other allies you can give permissions to everyone in just that Faction, or even just people with a specific rank in a faction. Do you have a co-leader you can give permissions just to her (or you could create a co-leader rank) or you can give permissions to special people even when they are not a part of the faction.
-If you want to check all permissions a player has you can do /f perm viewall <playerName>. This is all the permissions they have, not just the ones granted to them specifically. This is all permissions they have because of faction membership, rank, relation to your faction and the ones given to them specifically.
-To set perms do /f perm set <perm> <someone> <yes/no>, you have to specify the perm (build, door, etc.) who has to get the perm and a yes/no to give it or take it away. The someone can be a rank, relation, individual player or a specific faction, just as explained earlier..**
-###### Flags
-**In this section the following commands are covered:**  
+**派系具有权限列表，即谁可以做什么。可以授予等级a的权限。玩家，关系，另一个派系中的每个人或另一个派系中的特定级别。
+要列出所有权限，请键入/f perm list。要显示谁具有特定的权限类型/f perm show <perm>每个默认权限仅授予您的阵营中的等级，并为盟友提供一些权限，但是如果您进行了更改，将在此处显示。
+如果您想知道专门授予某人的权限，请执行/f perm view <someone>。如果您想检查军衔，比如说，官长，执行/f perm view Officer，检查盟友执行/f perm view ally，检查球员Madus，您将执行/f perm view Madus，检查特定派系，比如说卡尔马，执行/f perm view 卡尔玛，并检查专门授予卡尔马官员的权限，执行/f perm view Kalmar-Officer。这允许高度的粒度。您是否拥有超级傻瓜最好的盟友，这比您的其他盟友更重要，您可以仅授予该阵营中的每个人甚至是某个派系中特定职位的人的权限。您是否有共同领导者，您可以只授予她许可（或者您可以创建共同领导者等级），也可以向特殊人员授予许可，即使他们不属于派系。
+如果要检查玩家拥有的所有权限，则可以/f perm viewall <playerName>。这就是他们拥有的所有权限，而不仅仅是专门授予他们的权限。这是他们拥有的所有权限，这是由于派系成员资格，等级，与您的派系的关系以及专门分配给他们的。
+要设置权限，请/f perm set <perm> <someone> <yes/no>，您必须指定必须获得权限的权限（建筑物，门等），并指定是/否来给予或接受它走了。如前所述，某人可以是军衔，人际关系，个人玩家或特定派系。**
+###### 标志
+**本节介绍以下命令：**  
 /f flag manage faction flags  
 /f flag list [page=1] list flags  
 /f flag show [faction=you] [page=1] show flags  
 /f flag set <flag> <yes/no> [faction=you] set flags  
-**Flags are on/off attributes of most factions. To list them do /f flag list, to show whether they are enabled or disabled for a specific faction do /f flag show <factionName> and to set them do /f flag set <flag> <yes/no>. Per default you can change whether your faction is open (which means everyone can join even without invitation), whether monsters can spawn in the territory and whether animals can spawn in the territory).**
+**标志是大多数派系的开/关属性。 要列出它们，请执行/f flag list，以显示它们是否为特定派系启用或禁用，请/f flag show <factionName>并设置它们以/f flag set <flag> <yes/no>。 默认情况下，您可以更改派系是否开放（这意味着每个人即使没有邀请也可以加入），怪物是否可以在该区域中生成以及动物是否可以在该区域中生成）。**

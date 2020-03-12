@@ -1,4 +1,4 @@
-**In this section the following commands are covered:**  
+**本节介绍以下命令：**  
 /f fly  
 /f unstuck teleport to nearest wilderness  
 /f override,admin [on/off=flip] enable override mode  
