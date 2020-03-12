@@ -11,7 +11,7 @@
   <link rel="shortcut icon" href="img/logo.webp">
 </head>
 
-<body>
+<body class="has-navbar-fixed-top">
   <style>
     html{
       scroll-behavior:smooth;
@@ -53,66 +53,62 @@ if ($navbarBurgers.length > 0) {
 });
   </script>
 
-
-
-<div class="hero">
-  <div class="hero-head">
-    <nav class="navbar is-light">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="index.html" class="navbar-item">
-          <img src="img/logo-grey.webp" alt="Logo">
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              HOME
+    <header>
+      <nav class="navbar is-fixed-top is-white">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+            <img src="img/logo-grey.webp" alt="Logo">
             </a>
-    
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                EarthMCBE
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                HOME
               </a>
       
-              <div class="navbar-dropdown">
-                <a target="_blank" href="docs/" class="navbar-item">
-                  Docs
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a href="#" class="navbar-link">
+                  EarthMCBE
                 </a>
-                <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item">
-                  DynMap
-                </a>
-                <a target="_blank" href="donate/" class="navbar-item">
-                  Donate
-                </a>
+        
+                <div class="navbar-dropdown">
+                  <a target="_blank" href="docs/" class="navbar-item">
+                    Docs
+                  </a>
+                  <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item">
+                    DynMap
+                  </a>
+                  <a target="_blank" href="donate/" class="navbar-item">
+                    Donate
+                  </a>
+                </div>
               </div>
+      
+              <a class="navbar-item">
+                DuckRamen
+              </a>
             </div>
-    
-            <a class="navbar-item">
-              DuckRamen
-            </a>
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</div>
+      </nav>
+    </header>
 
   <div class="hero is-dark is-fullheight" style="background: url('img/bg-2.webp')center center; background-size:cover;">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-5">
-            <div class="hero" style="background-color: rgba(255,255,255); border-radius: 1em;">
+            <div class="hero" style="background-color: rgb(255,255,255); border-radius: 1em;">
               <div class="hero-body">
                 <div class="container">
                   <h1 class="title is-3" style="color:#263238;">EarthMCBE <br /> Survival</h1>
-                  <h2 class="subtitle" style="color: #212121;">Lovely server, it's very good, come on now.</h2>
+                  <h2 class="subtitle" style="color: #212121;">just for fun</h2>
                   <br />
                   <div class="container">
                     <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success" style="width: 48%; float: left; background-color: #673AB7;">
@@ -154,13 +150,13 @@ if ($navbarBurgers.length > 0) {
             </div>
           </div>
           <div class="column is-5">
-            <div class="hero" style="background-color: rgba(255,255,255); border-radius: 1em;">
+            <div class="hero" style="background-color: rgb(255,255,255); border-radius: 1em;">
               <div class="hero-body">
                 <div class="container">
                   <h1 class="title is-3" style="color: #263238;">DuckRamen <br /> Mini Games</h1>
-                  <h2 class="subtitle" style="color: #212121;">joy, love, fun</h2>
+                  <h2 class="subtitle" style="color: #212121;">now loading</h2>
                   <br />
-                  <a href="#" class="button is-success" style="width: 70%; background-color: #009688;" disabled>Fun Now</a>
+                  <a href="#" class="button is-success" style="width: 50%; background-color: #009688;" disabled>Fun Now</a>
                 </div>
               </div>
             </div>
@@ -170,15 +166,17 @@ if ($navbarBurgers.length > 0) {
     </div>
   </div>
 
-  <div class="hero is-black">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <i class="fas fa-heart" style="color: #EC407A;"></i>
-        <p>Electric Shock Apostle</p>
-        <p>All Rights Reserved</p>
+  <footer>
+    <div class="hero is-black">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <i class="fas fa-heart" style="color: #EC407A;"></i>
+          <p>Electric Shock Apostle</p>
+          <p>All Rights Reserved</p>
+        </div>
       </div>
     </div>
-  </div>
+  </footer>
 
 </body>
 
