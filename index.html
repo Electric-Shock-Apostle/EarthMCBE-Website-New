@@ -8,7 +8,7 @@
   <script src="lib/js/pace.min.js"></script>
   <link rel="stylesheet" href="lib/css/bulma.min.css" />
   <script defer="" src="https://cdn.bootcss.com/font-awesome/5.3.1/js/all.js"></script>
-  <link href="https://fonts.font.im/css?family=Comfortaa:300" rel="stylesheet" />
+  <link href="https://fonts.font.im/css?family=Comfortaa" rel="stylesheet" />
   <script src="lib/js/jquery.min.js"></script>
   <script src="lib/js/jquery.pagepiling.min.js"></script>
   <link rel="shortcut icon" href="lib/img/logo.png" />
@@ -263,7 +263,54 @@
     .section {
       padding: 0px;
     }
+    
+    .transbg1 {
+      background: #4568DC;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
 
+    .transbg2 {
+      background: #43C6AC;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .transbgalpha1{
+      background: rgb(239, 98, 159);
+      background: -webkit-linear-gradient(rgba(238,205,163,1),rgba(239,98,159,1));
+      background: linear-gradient(rgba(238,205,163,1),rgba(239,98,159,1));
+    }
+
+    .transbgalpha2{
+      background: rgb(207, 222, 243);
+      background: -webkit-linear-gradient(rgba(224,234,252,1),rgba(207,222,243,1));
+      background: linear-gradient(rgba(224,234,252,1),rgba(207,222,243,1));
+    }
+
+    .shadowbg{
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+    }
+
+    .shadowbg:hover{
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+    }
+
+    .shadowbgtrans{
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbgtrans:hover{
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.5);
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -298,7 +345,7 @@
     });
   </script>
   <header>
-    <nav class="navbar is-fixed-top is-link">
+    <nav class="navbar is-fixed-top transbg2" style="box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);">
       <div class="container">
         <div class="navbar-brand">
           <a href="index.html" class="navbar-item"> <img src="lib/img/logo.png" alt="E.S.A" /> </a>
@@ -325,7 +372,7 @@
   </header>
   <div id="pagepiling">
     <div class="section">
-      <div class="hero is-link is-fullheight">
+      <div class="hero is-fullheight transbg2">
         <div class="hero-body">
           <div class="container">
             <div class="columns">
@@ -338,19 +385,19 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero" style="background-color: rgb(255,255,255);">
+                <div class="hero transbgalpha2 shadowbg">
                   <div class="hero-body">
                     <div class="container">
-                      <h1 class="title is-3" style="color: #263238;">E.S.A Family Server</h1>
+                      <h1 class="title is-3" style="color: #263238;">E.S.A <br /> family servers</h1>
                       <h2 class="subtitle" style="color: #212121;">a platform for joy, fun and love</h2>
                       <br />
                       <div class="container">
-                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5IDkZqy" class="button is-success"
-                          style="width: 48%; float: left;  background-color: #03A9F4;"> <i class="fab fa-qq"
-                            style="color: #F5F5F5; margin: 0 0.3em;"></i>QQ </a>
-                        <a target="_blank" href="#" class="button is-success"
-                          style="width: 48%; float: right; background-color: #673AB7;" disabled> <i
-                            class="fab fa-discord" style="color: #F5F5F5; margin: 0 0.3em;"></i>Discord </a>
+                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5IDkZqy" class="shadowbgtrans button is-success"
+                          style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                            style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
+                        <a target="_blank" href="###" class="button is-success shadowbgtrans"
+                          style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                            class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
                     </div>
                   </div>
@@ -367,12 +414,6 @@
             </div>
           </div>
         </div>
-        <div class="hero-foot">
-          <div class="container has-text-centered">
-            <p>Electric Shock Apostle Made with <i class="fas fa-heart" style="color: #EC407A;"></i> All Rights Reserved
-            </p>
-          </div>
-        </div>
       </div>
     </div>
     <div class="section">
@@ -381,20 +422,28 @@
         <div class="hero-body">
           <div class="container">
             <div class="columns">
+              <div class="column">
+                <div class="hero">
+                  <div class="hero-body">
+                    <div class="container">
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="column is-5">
-                <div class="hero" style="background-color: rgb(255,255,255);">
+                <div class="hero transbgalpha2 shadowbg">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">EarthMCBE <br /> Survival</h1>
                       <h2 class="subtitle" style="color: #212121;">for joy</h2>
                       <br />
                       <div class="container">
-                        <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success"
-                          style="width: 48%; float: left; background-color: #673AB7;"> <i class="fab fa-discord"
-                            style="color: #F5F5F5; margin: 0 0.3em;"></i>Discord </a>
-                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success"
-                          style="width: 48%; float: right;  background-color: #03A9F4;"> <i class="fab fa-qq"
-                            style="color: #F5F5F5; margin: 0 0.3em;"></i>QQ </a>
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success shadowbgtrans"
+                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                              style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
+                          <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success shadowbgtrans"
+                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                              class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
                     </div>
                   </div>
@@ -428,20 +477,28 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero" style="background-color: rgb(255,255,255);">
+                <div class="hero transbgalpha2 shadowbg">
                   <div class="hero-body">
                     <div class="container">
-                      <h1 class="title is-3" style="color: #263238;">DuckRamen <br /> Mini Games</h1>
+                      <h1 class="title is-3" style="color:#263238;">DuckRamen <br /> Mini Games</h1>
                       <h2 class="subtitle" style="color: #212121;">for fun</h2>
                       <br />
                       <div class="container">
-                        <a target="_blank" href="#" class="button is-success"
-                          style="width: 48%; float: left; background-color: #673AB7;" disabled> <i
-                            class="fab fa-discord" style="color: #F5F5F5; margin: 0 0.3em;"></i>Discord </a>
-                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success"
-                          style="width: 48%; float: right;  background-color: #03A9F4;"> <i class="fab fa-qq"
-                            style="color: #F5F5F5; margin: 0 0.3em;"></i>QQ </a>
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success shadowbgtrans"
+                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                              style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
+                          <a target="_blank" href="###" class="button is-success shadowbgtrans"
+                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                              class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="hero">
+                  <div class="hero-body">
+                    <div class="container">
                     </div>
                   </div>
                 </div>
@@ -457,20 +514,29 @@
         <div class="hero-body">
           <div class="container">
             <div class="columns">
+              <div class="column">
+                <div class="hero">
+                  <div class="hero-body">
+                    <div class="container">
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="column is-5">
-                <div class="hero" style="background-color: rgb(255,255,255);">
+                <div class="hero transbgalpha2 shadowbg">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">FIVEHEARTS <br /> Hardcore Survival</h1>
                       <h2 class="subtitle" style="color: #212121;">for love</h2>
                       <br />
                       <div class="container">
-                        <a target="_blank" href="###" class="button is-success"
-                          style="width: 48%; float: left; background-color: #673AB7;" disabled> <i
-                            class="fab fa-discord" style="color: #F5F5F5; margin: 0 0.3em;"></i>Discord </a>
-                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success"
-                          style="width: 48%; float: right;  background-color: #03A9F4;"> <i class="fab fa-qq"
-                            style="color: #F5F5F5; margin: 0 0.3em;"></i>QQ </a>
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success shadowbgtrans"
+                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                              style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
+                          <a target="_blank" href="###" class="button is-success shadowbgtrans"
+                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                              class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
+
                       </div>
                     </div>
                   </div>
