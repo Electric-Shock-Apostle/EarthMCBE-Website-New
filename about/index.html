@@ -33,6 +33,60 @@
       scroll-behavior: smooth;
       font-family: 'Comfortaa', cursive;
     }
+
+    .bg1 {
+      background: #ECF0F3;
+    }   
+
+    .shadowbg3{
+      background: linear-gradient(145deg, #d4d8db, #fdffff);
+      box-shadow:  20px 20px 60px #c9cccf, 
+             -20px -20px 60px #ffffff;
+    }
+
+    .shadowbg4:hover{
+      background: linear-gradient(145deg, #55d1ff, #47b0de);
+      box-shadow:  20px 20px 60px #43a6d2, 
+                  -20px -20px 60px #5be0ff;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg4{
+      background: linear-gradient(145deg, #47b0de, #55d1ff);
+      box-shadow:  10px 10px 30px #43a6d2, 
+                  -10px -10px 30px #5be0ff;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg5:hover{
+      background: linear-gradient(145deg, #ff699c, #d85883);
+      box-shadow:  20px 20px 60px #cc537c, 
+                  -20px -20px 60px #ff71a8;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg5{
+      background: linear-gradient(145deg, #d85883, #ff699c);
+      box-shadow:  10px 10px 30px #cc537c, 
+                  -10px -10px 30px #ff71a8;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg6{
+      background: linear-gradient(145deg, #d4d8db, #fdffff);
+      box-shadow:  20px 20px 60px #c9cccf, 
+                  -20px -20px 60px #ffffff;
+    }
+
+    .shadowbg7{
+      background: linear-gradient(145deg, #fdffff, #d4d8db);
+      box-shadow:  20px 20px 60px #c9cccf, 
+                 -20px -20px 60px #ffffff;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -61,54 +115,77 @@
 
     });
   </script>
-  <header>
-    <nav class="navbar is-link is-fixed-top">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="../" class="navbar-item"> <img src="../lib/img/logo.png" alt="E.S.A" /> </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA"> <span></span> <span></span> <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="../" class="navbar-item"> Home </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a href="#" class="navbar-link"> EarthMCBE </a>
-              <div class="navbar-dropdown">
-                <a target="_blank" href="../docs/" class="navbar-item"> Docs </a>
-                <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item"> DynMap </a>
-                <a target="_blank" href="../donate/" class="navbar-item"> Donate </a>
+
+  <div class="hero shadowbg7 is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar shadowbg6">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="../" class="navbar-item"> <img src="../lib/img/logo.png" alt="E.S.A" /> </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA"> <span></span> <span></span> <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="../" class="navbar-item"> Home </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a href="#" class="navbar-link"> EarthMCBE </a>
+                <div class="navbar-dropdown">
+                  <a target="_blank" href="../docs/" class="navbar-item"> Docs </a>
+                  <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item"> DynMap </a>
+                  <a target="_blank" href="../donate/" class="navbar-item"> Donate </a>
+                </div>
               </div>
+              <a class="navbar-item"> DuckRamen </a>
+              <a target="_blank" href="../about/" class="navbar-item is-active"> About </a>
             </div>
-            <a class="navbar-item"> DuckRamen </a>
-            <a target="_blank" href="../about/" class="navbar-item is-active"> About </a>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <div class="hero is-link is-fullheight">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <img src="../lib/img/logo.png" style="width: 50%;" alt="">
-        <h1 class="title is-size-4" style="color: #FFFFFF;">Electric Shock Apostle Studio</h1>
-        <h2 class="subtitle" style="color: #FFFFFF;">just for fun</h2>
-      </div>
-    </div>
-  </div>
-  <div class="hero is-link">
-    <div class="hero-head">
-      <div class="container has-text-centered">
-        <br />
-        <br />
-        <p class="is-size-2">members</p>
-      </div>
+      </nav>
     </div>
     <div class="hero-body">
       <div class="container">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column">
+            <div class="hero">
+              <div class="hero-body">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-7">
+            <div class="hero shadowbg6">
+              <div class="hero-body">
+                <div class="container has-text-centered">
+                  <br />
+                  <br />
+                  <h1 class="title is-size-1" style="color: #263238;">E.S.A</h1>
+                  <h2 class="subtitle" style="color: #212121;">a team for joy, fun and love</h2>
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="hero">
+              <div class="hero-body">
+                <div class="container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero is-fullheight shadowbg6">
+    <div class="hero-body">
+      <div class="container shadowbg6">
+        <div class="columns">
+          <div class="column">
             <div class="hero">
               <div class="hero-body">
                 <div class="container">
@@ -129,9 +206,14 @@
           </div>
         </div>
       </div>
-      <div class="container">
+    </div>
+  </div>
+
+  <div class="hero is-fullheight shadowbg6">
+    <div class="hero-body">
+      <div class="container shadowbg6">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column">
             <div class="hero">
               <div class="hero-body">
                 <div class="container">
@@ -152,9 +234,14 @@
           </div>
         </div>
       </div>
-      <div class="container">
+    </div>
+  </div>
+
+  <div class="hero is-fullheight shadowbg6">
+    <div class="hero-body">
+      <div class="container shadowbg6">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column">
             <div class="hero">
               <div class="hero-body">
                 <div class="container">
@@ -167,17 +254,22 @@
             <div class="hero">
               <div class="hero-body">
                 <div class="container">
-                  <p class="is-size-3">nowcube</p>
-                  <p class="is-size-5">fun, love, accpet, thanksgiving, blessing</p>
+                  <p class="is-size-3">sola</p>
+                  <p class="is-size-5">soul love</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
+    </div>
+  </div>
+
+  <div class="hero is-fullheight shadowbg6">
+    <div class="hero-body">
+      <div class="container shadowbg6">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column">
             <div class="hero">
               <div class="hero-body">
                 <div class="container">
@@ -198,9 +290,14 @@
           </div>
         </div>
       </div>
-      <div class="container">
+    </div>
+  </div>
+
+  <div class="hero is-fullheight shadowbg6">
+    <div class="hero-body">
+      <div class="container shadowbg6">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column">
             <div class="hero">
               <div class="hero-body">
                 <div class="container">
@@ -214,7 +311,7 @@
               <div class="hero-body">
                 <div class="container">
                   <p class="is-size-3">ren</p>
-                  <p class="is-size-5">This person is very profiled and not lazy</p>
+                  <p class="is-size-5">this person is very profiled and not lazy</p>
                 </div>
               </div>
             </div>
@@ -223,18 +320,7 @@
       </div>
     </div>
   </div>
-  <footer>
-    <div class="hero is-link">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <i class="fas fa-heart" style="color: #EC407A;"></i>
-          <br />
-          <p>Electric Shock Apostle</p>
-          <p>All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+
 </body>
 
 </html>
