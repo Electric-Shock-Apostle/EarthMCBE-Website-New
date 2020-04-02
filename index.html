@@ -263,53 +263,86 @@
     .section {
       padding: 0px;
     }
-    
-    .transbg1 {
-      background: #4568DC;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
 
-    .transbg2 {
-      background: #43C6AC;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+    .bg1 {
+      background: #ECF0F3;
+    }   
 
-    .transbgalpha1{
-      background: rgb(239, 98, 159);
-      background: -webkit-linear-gradient(rgba(238,205,163,1),rgba(239,98,159,1));
-      background: linear-gradient(rgba(238,205,163,1),rgba(239,98,159,1));
-    }
-
-    .transbgalpha2{
-      background: rgb(207, 222, 243);
-      background: -webkit-linear-gradient(rgba(224,234,252,1),rgba(207,222,243,1));
-      background: linear-gradient(rgba(224,234,252,1),rgba(207,222,243,1));
-    }
-
-    .shadowbg{
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+    .shadowbg1{
+      background: #ECF0F3;
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
       transition: all 0.2s linear;
       -webkit-transition: all 0.2s linear;
     }
 
-    .shadowbg:hover{
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.5);
+    .shadowbg1:hover{
+      background: #ECF0F3;
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9);
       transition: all 0.2s linear;
       -webkit-transition: all 0.2s linear;
     }
 
-    .shadowbgtrans{
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+    .shadowbg2{
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
       transition: all 0.1s linear;
       -webkit-transition: all 0.1s linear;
     }
 
-    .shadowbgtrans:hover{
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.5);
+    .shadowbg2:hover{
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9);
       transition: all 0.1s linear;
       -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg3{
+      background: linear-gradient(145deg, #d4d8db, #fdffff);
+      box-shadow:  20px 20px 60px #c9cccf, 
+                  -20px -20px 60px #ffffff;
+    }
+
+    .shadowbg4:hover{
+      background: linear-gradient(145deg, #55d1ff, #47b0de);
+      box-shadow:  20px 20px 60px #43a6d2, 
+                  -20px -20px 60px #5be0ff;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg4{
+      background: linear-gradient(145deg, #47b0de, #55d1ff);
+      box-shadow:  10px 10px 30px #43a6d2, 
+                  -10px -10px 30px #5be0ff;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg5:hover{
+      background: linear-gradient(145deg, #ff699c, #d85883);
+      box-shadow:  20px 20px 60px #cc537c, 
+                  -20px -20px 60px #ff71a8;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg5{
+      background: linear-gradient(145deg, #d85883, #ff699c);
+      box-shadow:  10px 10px 30px #cc537c, 
+                  -10px -10px 30px #ff71a8;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+    }
+
+    .shadowbg6:hover{
+      background: linear-gradient(145deg, #fdffff, #d4d8db);
+      box-shadow:  20px 20px 60px #c9cccf, 
+                  -20px -20px 60px #ffffff;
+             
+    }
+
+    .shadowbg6{ 
+      background: linear-gradient(145deg, #d4d8db, #fdffff);
+      box-shadow:  20px 20px 60px #c9cccf, 
+                  -20px -20px 60px #ffffff;
     }
   </style>
   <script>
@@ -345,7 +378,7 @@
     });
   </script>
   <header>
-    <nav class="navbar is-fixed-top transbg2" style="box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);">
+    <nav class="navbar is-fixed-top shadowbg3">
       <div class="container">
         <div class="navbar-brand">
           <a href="index.html" class="navbar-item"> <img src="lib/img/logo.png" alt="E.S.A" /> </a>
@@ -372,7 +405,7 @@
   </header>
   <div id="pagepiling">
     <div class="section">
-      <div class="hero is-fullheight transbg2">
+      <div class="hero is-fullheight bg1">
         <div class="hero-body">
           <div class="container">
             <div class="columns">
@@ -385,17 +418,17 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero transbgalpha2 shadowbg">
+                <div class="hero shadowbg6">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color: #263238;">E.S.A <br /> family servers</h1>
                       <h2 class="subtitle" style="color: #212121;">a platform for joy, fun and love</h2>
                       <br />
                       <div class="container">
-                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5IDkZqy" class="shadowbgtrans button is-success"
+                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5IDkZqy" class="shadowbg4 button is-success"
                           style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
                             style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                        <a target="_blank" href="###" class="button is-success shadowbgtrans"
+                        <a target="_blank" href="###" class="button is-success shadowbg5"
                           style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
                             class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
@@ -418,7 +451,7 @@
     </div>
     <div class="section">
       <div class="hero is-dark is-fullheight"
-        style="background: url('lib/img/1.jpg')center center; background-size:cover; background-color: skyblue;">
+        style="background: url('lib/img/1.jpg')center center; background-size:cover; background-color: #ECF0F3;">
         <div class="hero-body">
           <div class="container">
             <div class="columns">
@@ -431,17 +464,17 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero transbgalpha2 shadowbg">
+                <div class="hero shadowbg1">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">EarthMCBE <br /> Survival</h1>
                       <h2 class="subtitle" style="color: #212121;">for joy</h2>
                       <br />
                       <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success shadowbgtrans"
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success shadowbg2"
                             style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
                               style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success shadowbgtrans"
+                          <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success shadowbg2"
                             style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
                               class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
@@ -464,7 +497,7 @@
     </div>
     <div class="section">
       <div class="hero is-dark is-fullheight"
-        style="background: url('lib/img/2.jpg')center center; background-size:cover; background-color: springgreen;">
+        style="background: url('lib/img/2.jpg')center center; background-size:cover; background-color: #ECF0F3;">
         <div class="hero-body">
           <div class="container">
             <div class="columns">
@@ -477,17 +510,17 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero transbgalpha2 shadowbg">
+                <div class="hero shadowbg1">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">DuckRamen <br /> Mini Games</h1>
                       <h2 class="subtitle" style="color: #212121;">for fun</h2>
                       <br />
                       <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success shadowbgtrans"
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success shadowbg2"
                             style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
                               style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="###" class="button is-success shadowbgtrans"
+                          <a target="_blank" href="###" class="button is-success shadowbg2"
                             style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
                               class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
@@ -510,7 +543,7 @@
     </div>
     <div class="section">
       <div class="hero is-link is-fullheight"
-        style="background: url('lib/img/3.jpg')center center; background-size:cover; background-color: gray;">
+        style="background: url('lib/img/3.jpg')center center; background-size:cover; background-color: #ECF0F3;">
         <div class="hero-body">
           <div class="container">
             <div class="columns">
@@ -523,17 +556,17 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero transbgalpha2 shadowbg">
+                <div class="hero shadowbg1">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">FIVEHEARTS <br /> Hardcore Survival</h1>
                       <h2 class="subtitle" style="color: #212121;">for love</h2>
                       <br />
                       <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success shadowbgtrans"
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success shadowbg2"
                             style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
                               style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="###" class="button is-success shadowbgtrans"
+                          <a target="_blank" href="###" class="button is-success shadowbg2"
                             style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
                               class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
 
