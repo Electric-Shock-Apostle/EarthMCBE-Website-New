@@ -297,7 +297,7 @@
     .shadowbg3{
       background: linear-gradient(145deg, #d4d8db, #fdffff);
       box-shadow:  20px 20px 60px #c9cccf, 
-                  -20px -20px 60px #ffffff;
+             -20px -20px 60px #ffffff;
     }
 
     .shadowbg4:hover{
@@ -332,17 +332,17 @@
       -webkit-transition: all 0.1s linear;
     }
 
-    .shadowbg6:hover{
-      background: linear-gradient(145deg, #fdffff, #d4d8db);
-      box-shadow:  20px 20px 60px #c9cccf, 
-                  -20px -20px 60px #ffffff;
-             
-    }
-
-    .shadowbg6{ 
+    .shadowbg6{
+      border-radius: 0.2rem; 
       background: linear-gradient(145deg, #d4d8db, #fdffff);
       box-shadow:  20px 20px 60px #c9cccf, 
                   -20px -20px 60px #ffffff;
+    }
+
+    .shadowbg7{
+      background: linear-gradient(145deg, #fdffff, #d4d8db);
+      box-shadow:  20px 20px 60px #c9cccf, 
+                 -20px -20px 60px #ffffff;
     }
   </style>
   <script>
@@ -377,35 +377,35 @@
       $('#pagepiling').pagepiling();
     });
   </script>
-  <header>
-    <nav class="navbar is-fixed-top shadowbg3">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="index.html" class="navbar-item"> <img src="lib/img/logo.png" alt="E.S.A" /> </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA"> <span></span> <span></span> <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="/" class="navbar-item is-active"> Home </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a href="#" class="navbar-link"> EarthMCBE </a>
-              <div class="navbar-dropdown">
-                <a target="_blank" href="docs/" class="navbar-item"> Docs </a>
-                <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item"> DynMap </a>
-                <a target="_blank" href="donate/" class="navbar-item"> Donate </a>
-              </div>
-            </div>
-            <a class="navbar-item"> DuckRamen </a>
-            <a target="_blank" href="about/" class="navbar-item"> About </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
   <div id="pagepiling">
     <div class="section">
       <div class="hero is-fullheight bg1">
+        <div class="hero-head">
+          <nav class="navbar is-fixed-top shadowbg3">
+            <div class="container">
+              <div class="navbar-brand">
+                <a href="index.html" class="navbar-item"> <img src="lib/img/logo.png" alt="E.S.A" /> </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroA"> <span></span> <span></span> <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a href="/" class="navbar-item is-active"> Home </a>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="navbar-link"> EarthMCBE </a>
+                    <div class="navbar-dropdown">
+                      <a target="_blank" href="docs/" class="navbar-item"> Docs </a>
+                      <a target="_blank" href="http://server.earthmcbe.space:22111/" class="navbar-item"> DynMap </a>
+                      <a target="_blank" href="donate/" class="navbar-item"> Donate </a>
+                    </div>
+                  </div>
+                  <a class="navbar-item"> DuckRamen </a>
+                  <a target="_blank" href="about/" class="navbar-item"> About </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
         <div class="hero-body">
           <div class="container">
             <div class="columns">
@@ -426,10 +426,10 @@
                       <br />
                       <div class="container">
                         <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5IDkZqy" class="shadowbg4 button is-success"
-                          style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                          style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.1rem;"> <i class="fab fa-qq"
                             style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
                         <a target="_blank" href="###" class="button is-success shadowbg5"
-                          style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                          style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.1rem;"> <i
                             class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
                     </div>
@@ -459,23 +459,24 @@
                 <div class="hero">
                   <div class="hero-body">
                     <div class="container">
+
                     </div>
                   </div>
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero shadowbg1">
+                <div class="hero shadowbg7">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">EarthMCBE <br /> Survival</h1>
                       <h2 class="subtitle" style="color: #212121;">for joy</h2>
                       <br />
                       <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success shadowbg2"
-                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success shadowbg4"
+                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.1rem;"> <i class="fab fa-qq"
                               style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success shadowbg2"
-                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                          <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success shadowbg5"
+                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.1rem;"> <i
                               class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
                     </div>
@@ -486,6 +487,7 @@
                 <div class="hero">
                   <div class="hero-body">
                     <div class="container">
+                      
                     </div>
                   </div>
                 </div>
@@ -510,18 +512,18 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero shadowbg1">
+                <div class="hero shadowbg7">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">DuckRamen <br /> Mini Games</h1>
                       <h2 class="subtitle" style="color: #212121;">for fun</h2>
                       <br />
                       <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success shadowbg2"
-                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success shadowbg4"
+                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.1rem;"> <i class="fab fa-qq"
                               style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="###" class="button is-success shadowbg2"
-                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                          <a target="_blank" href="###" class="button is-success shadowbg5"
+                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.1rem;"> <i
                               class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
                       </div>
                     </div>
@@ -556,18 +558,18 @@
                 </div>
               </div>
               <div class="column is-5">
-                <div class="hero shadowbg1">
+                <div class="hero shadowbg7">
                   <div class="hero-body">
                     <div class="container">
                       <h1 class="title is-3" style="color:#263238;">FIVEHEARTS <br /> Hardcore Survival</h1>
                       <h2 class="subtitle" style="color: #212121;">for love</h2>
                       <br />
                       <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success shadowbg2"
-                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0rem;"> <i class="fab fa-qq"
+                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success shadowbg4"
+                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.1rem;"> <i class="fab fa-qq"
                               style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="###" class="button is-success shadowbg2"
-                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0rem;"> <i
+                          <a target="_blank" href="###" class="button is-success shadowbg5"
+                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.1rem;"> <i
                               class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
 
                       </div>
