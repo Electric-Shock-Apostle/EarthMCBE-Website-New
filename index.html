@@ -1,598 +1,72 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="lib/css/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/EarthMCBE/EarthMCBE-Website-New@v1.0/lib/img/logo.png">
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-155744470-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>E.S.A. Studio - A game team for minecraft</title>
-  <script src="lib/js/pace.min.js"></script>
-  <link rel="stylesheet" href="lib/css/bulma.min.css" />
-  <script defer="" src="https://cdn.bootcss.com/font-awesome/5.3.1/js/all.js"></script>
-  <link href="https://fonts.font.im/css?family=Comfortaa" rel="stylesheet" />
-  <script src="lib/js/jquery.min.js"></script>
-  <script src="lib/js/jquery.pagepiling.min.js"></script>
-  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/EarthMCBE/EarthMCBE-Website-New@v1.0/lib/img/logo.png" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155744470-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-155744470-1');
-  </script>
-  </head>
-
-<body>
-  <style>
-    .pace {
-      -webkit-pointer-events: none;
-      pointer-events: none;
-
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    .pace .pace-activity {
-      display: block;
-      position: fixed;
-      z-index: 2000;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 300px;
-      background: #29d;
-      -webkit-transition: -webkit-transform 0.3s;
-      transition: transform 0.3s;
-      -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
-      transform: translateX(100%) translateY(-100%) rotate(45deg);
-      pointer-events: none;
-    }
-
-    .pace.pace-active .pace-activity {
-      -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
-      transform: translateX(50%) translateY(-50%) rotate(45deg);
-    }
-
-    .pace .pace-activity::before,
-    .pace .pace-activity::after {
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      display: block;
-      border: 5px solid #fff;
-      border-radius: 50%;
-      content: '';
-    }
-
-    .pace .pace-activity::before {
-      margin-left: -40px;
-      width: 80px;
-      height: 80px;
-      border-right-color: rgba(0, 0, 0, .2);
-      border-left-color: rgba(0, 0, 0, .2);
-      -webkit-animation: pace-theme-corner-indicator-spin 3s linear infinite;
-      animation: pace-theme-corner-indicator-spin 3s linear infinite;
-    }
-
-    .pace .pace-activity::after {
-      bottom: 50px;
-      margin-left: -20px;
-      width: 40px;
-      height: 40px;
-      border-top-color: rgba(0, 0, 0, .2);
-      border-bottom-color: rgba(0, 0, 0, .2);
-      -webkit-animation: pace-theme-corner-indicator-spin 1s linear infinite;
-      animation: pace-theme-corner-indicator-spin 1s linear infinite;
-    }
-
-    @-webkit-keyframes pace-theme-corner-indicator-spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(359deg);
-      }
-    }
-
-    @keyframes pace-theme-corner-indicator-spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(359deg);
-      }
-    }
-
-    */body,
-    html {
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-    }
-
-    .pp-section {
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      backface-visibility: hidden
-    }
-
-    .pp-easing {
-      -webkit-transition: all 1s cubic-bezier(.55, .085, 0, .99);
-      -moz-transition: all 1s cubic-bezier(.55, .085, 0, .99);
-      -o-transition: all 1s cubic-bezier(.55, .085, 0, .99);
-      transition: all 1s cubic-bezier(.55, .085, 0, .99);
-      -webkit-transition-timing-function: cubic-bezier(.55, .085, 0, .99);
-      -moz-transition-timing-function: cubic-bezier(.55, .085, 0, .99);
-      -o-transition-timing-function: cubic-bezier(.55, .085, 0, .99);
-      transition-timing-function: cubic-bezier(.55, .085, 0, .99)
-    }
-
-    #pp-nav {
-      position: fixed;
-      z-index: 100;
-      margin-top: -32px;
-      top: 50%;
-      opacity: 1
-    }
-
-    #pp-nav.right {
-      right: 17px
-    }
-
-    #pp-nav.left {
-      left: 17px
-    }
-
-    .pp-section.pp-table {
-      display: table
-    }
-
-    .pp-tableCell {
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
-      height: 100%
-    }
-
-    .pp-slidesNav {
-      position: absolute;
-      z-index: 4;
-      left: 50%;
-      opacity: 1
-    }
-
-    .pp-slidesNav.bottom {
-      bottom: 17px
-    }
-
-    .pp-slidesNav.top {
-      top: 17px
-    }
-
-    #pp-nav ul,
-    .pp-slidesNav ul {
-      margin: 0;
-      padding: 0
-    }
-
-    #pp-nav li,
-    .pp-slidesNav li {
-      display: block;
-      width: 14px;
-      height: 13px;
-      margin: 7px;
-      position: relative
-    }
-
-    .pp-slidesNav li {
-      display: inline-block
-    }
-
-    #pp-nav li a,
-    .pp-slidesNav li a {
-      display: block;
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-      text-decoration: none
-    }
-
-    #pp-nav li .active span,
-    .pp-slidesNav .active span {
-      background: #333
-    }
-
-    #pp-nav span,
-    .pp-slidesNav span {
-      top: 2px;
-      left: 2px;
-      width: 8px;
-      height: 8px;
-      border: 1px solid #000;
-      background: rgba(0, 0, 0, 0);
-      border-radius: 50%;
-      position: absolute;
-      z-index: 1
-    }
-
-    .pp-tooltip {
-      position: absolute;
-      top: -2px;
-      color: #fff;
-      font-size: 14px;
-      font-family: arial, helvetica, sans-serif;
-      white-space: nowrap;
-      max-width: 220px
-    }
-
-    .pp-tooltip.right {
-      right: 20px
-    }
-
-    .pp-tooltip.left {
-      left: 20px
-    }
-
-    .pp-scrollable {
-      overflow-y: scroll;
-      height: 100%
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-family: 'Comfortaa', cursive;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-      font-family: 'Comfortaa', cursive;
-    }
-
-    .section {
-      padding: 0px;
-    }
-
-    .bg1 {
-      background: #ECF0F3;
-    }   
-
-    .shadowbg1{
-      background: #ECF0F3;
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
-      transition: all 0.2s linear;
-      -webkit-transition: all 0.2s linear;
-    }
-
-    .shadowbg1:hover{
-      background: #ECF0F3;
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9);
-      transition: all 0.2s linear;
-      -webkit-transition: all 0.2s linear;
-    }
-
-    .shadowbg2{
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3);
-      transition: all 0.1s linear;
-      -webkit-transition: all 0.1s linear;
-    }
-
-    .shadowbg2:hover{
-      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.9);
-      transition: all 0.1s linear;
-      -webkit-transition: all 0.1s linear;
-    }
-
-    .shadowbg3{
-      background: linear-gradient(145deg, #d4d8db, #fdffff);
-      box-shadow:  20px 20px 60px #c9cccf, 
-             -20px -20px 60px #ffffff;
-    }
-
-    .shadowbg4:hover{
-      background: linear-gradient(145deg, #55d1ff, #47b0de);
-      box-shadow:  20px 20px 60px #43a6d2, 
-                  -20px -20px 60px #5be0ff;
-      transition: all 0.1s linear;
-      -webkit-transition: all 0.1s linear;
-    }
-
-    .shadowbg4{
-      background: linear-gradient(145deg, #a1cee3, #c0f5ff);
-      box-shadow:  10px 10px 30px #98c3d6, 
-                  -10px -10px 30px #ceffff;
-      transition: all 0.1s linear;
-      -webkit-transition: all 0.1s linear;
-    }
-
-    .shadowbg5:hover{
-      background: linear-gradient(145deg, #ff699c, #d85883);
-      box-shadow:  20px 20px 60px #cc537c, 
-                  -20px -20px 60px #ff71a8;
-      transition: all 0.1s linear;
-      -webkit-transition: all 0.1s linear;
-    }
-
-    .shadowbg5{
-      background: linear-gradient(145deg, #dfa8bb, #ffc8df);
-      box-shadow:  10px 10px 30px #d39fb1, 
-                  -10px -10px 30px #ffd7ef;
-      transition: all 0.1s linear;
-      -webkit-transition: all 0.1s linear;
-    }
-
-    .shadowbg6{
-      border-radius: 0.5rem;
-      background: linear-gradient(145deg, #d4d8db, #fdffff);
-      box-shadow:  20px 20px 60px #c9cccf, 
-                  -20px -20px 60px #ffffff;
-    }
-
-    .shadowbg7{
-      border-radius: 0.5rem;
-      background: linear-gradient(145deg, #fdffff, #d4d8db);
-      box-shadow:  10px 10px 30px #c9cccf, 
-                 -10px -10px 30px #ffffff;
-    }
-
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
-        });
-      }
-
-    });
-  </script>
-  <div id="pagepiling">
-    <div class="section">
-      <div class="hero is-fullheight bg1">
-        <div class="hero-head">
-          <nav class="navbar is-fixed-top shadowbg3">
-            <div class="container">
-              <div class="navbar-brand">
-                <a href="index.html" class="navbar-item"> <img src="https://cdn.jsdelivr.net/gh/EarthMCBE/EarthMCBE-Website-New@v1.0/lib/img/logo.png" alt="E.S.A" /> </a>
-                <span class="navbar-burger burger" data-target="navbarMenuHeroA"> <span></span> <span></span> <span></span>
-                </span>
-              </div>
-              <div id="navbarMenuHeroA" class="navbar-menu">
-                <div class="navbar-end">
-                  <a href="/" class="navbar-item is-active"> Home </a>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a href="#" class="navbar-link"> EarthMCBE </a>
-                    <div class="navbar-dropdown">
-                      <a target="_blank" href="docs/" class="navbar-item"> Docs </a>
-                      <a target="_blank" href="http://server.earthmcbe.space:21065/" class="navbar-item"> DynMap </a>
-                      <a target="_blank" href="donate/" class="navbar-item"> Donate </a>
-                    </div>
-                  </div>
-                  <a class="navbar-item"> DuckRamen </a>
-                  <a target="_blank" href="about/" class="navbar-item"> About </a>
+          gtag('config', 'UA-155744470-1');
+        </script>
+          <title>E.S.A - A game team for minecraft</title>
+    </head>
+    <body>
+        <div class="page1">
+            <div class="nav">
+                <div class="nav-box">
+                    <a target="_blank" href="about/"><i class="fa fa-user-alt about"></i></a>
+                    <a target="_blank" href="/"><img class="logo" src="lib/img/logo-light.png" alt=""></a>
+                    <a target="_blank" href="donate/"><i class="fa fa-heart donate"></i></a>
                 </div>
-              </div>
             </div>
-          </nav>
-        </div>
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns">
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
+            <div class="main">
+                <div class="box-1">
+                    <div class="newera-bg">
+                        <img class="newera-logo" src="lib/img/newera.png" alt="">
                     </div>
-                  </div>
+                    <h1 class="card-title">New Era</h1>
+                    <h2 class="card-subtitle">the earth on minecraft pe</h2>
                 </div>
-              </div>
-              <div class="column is-7">
-                <div class="hero shadowbg6">
-                  <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title is-3" style="color: #263238;">E.S.A <br /> family servers</h1>
-                        <h2 class="subtitle" style="color: #212121;">a platform for joy, fun and love</h2>
-                      <br />
-                      <div class="container">
-                        <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5IDkZqy" class="shadowbg4 button is-success"
-                          style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.5rem;"> <i class="fab fa-qq"
-                            style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                        <a target="_blank" href="###" class="button is-success shadowbg5"
-                          style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.5rem;"> <i
-                            class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+            <div class="footer">
+                <div class="box-2">
+                    <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button qq"><i class="fab fa-qq"></i></a>
+                    <a target="_blank" href="docs/" class="button docs"><i class="fa fa-file-alt"></i></a>
+                    <a target="_blank" href="http://server.earthmcbe.space:21065/" class="button map"><i class="fa fa-map"></i></a>
+                    <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="hero is-dark is-fullheight"
-        style="background: url('https://cdn.jsdelivr.net/gh/EarthMCBE/EarthMCBE-Website-New@v1.0/lib/img/1.jpg')center center; background-size:cover; background-color: #ECF0F3;">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns">
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
 
-                    </div>
-                  </div>
+        <div class="page2">
+            <div class="nav">
+                <div class="nav-box">
+                    <a target="_blank" href="about/"><i class="fa fa-user-alt about"></i></a>
+                    <a target="_blank" href="/"><img class="logo" src="lib/img/logo-light.png" alt=""></a>
+                    <a target="_blank" href="donate/"><i class="fa fa-heart donate"></i></a>
                 </div>
-              </div>
-              <div class="column is-7">
-                <div class="hero shadowbg7">
-                  <div class="hero-body">
-                    <div class="container">
-                      <h1 class="title is-3" style="color:#263238;">EarthMCBE <br /> Survival</h1>
-                      <h2 class="subtitle" style="color: #212121;">for joy</h2>
-                      <br />
-                      <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=5qd5Scr" class="button is-success shadowbg4"
-                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.5rem;"> <i class="fab fa-qq"
-                              style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="https://discord.gg/zRkx4Uk" class="button is-success shadowbg5"
-                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.5rem;"> <i
-                              class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="hero is-dark is-fullheight"
-        style="background: url('https://cdn.jsdelivr.net/gh/EarthMCBE/EarthMCBE-Website-New@v1.0/lib/img/2.jpg')center center; background-size:cover; background-color: #ECF0F3;">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns">
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
+            <div class="main">
+                <div class="box-1">
+                    <div class="duck-bg">
+                        <i class="duck-logo fa fa-crow"></i>
                     </div>
-                  </div>
+                    <h1 class="card-title">Duck Mini</h1>
+                    <h2 class="card-subtitle">fun fun fun mcbe mini game</h2>
                 </div>
-              </div>
-              <div class="column is-7">
-                <div class="hero shadowbg7">
-                  <div class="hero-body">
-                    <div class="container">
-                      <h1 class="title is-3" style="color:#263238;">DuckRamen <br /> Mini Games</h1>
-                      <h2 class="subtitle" style="color: #212121;">for fun</h2>
-                      <br />
-                      <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button is-success shadowbg4"
-                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.5rem;"> <i class="fab fa-qq"
-                              style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="###" class="button is-success shadowbg5"
-                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.5rem;"> <i
-                              class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="hero is-link is-fullheight"
-        style="background: url('https://cdn.jsdelivr.net/gh/EarthMCBE/EarthMCBE-Website-New@v1.0/lib/img/3.jpg')center center; background-size:cover; background-color: #ECF0F3;">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns">
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
-                    </div>
-                  </div>
+            <div class="footer">
+                <div class="box-2">
+                    <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=58tTRs3" class="button qq"><i class="fab fa-qq"></i></a>
+                    <a target="_blank" href="###" class="button discord"><i class="fab fa-discord"></i></a>
                 </div>
-              </div>
-              <div class="column is-7">
-                <div class="hero shadowbg7">
-                  <div class="hero-body">
-                    <div class="container">
-                      <h1 class="title is-3" style="color:#263238;">FIVEHEARTS <br /> Hardcore Survival</h1>
-                      <h2 class="subtitle" style="color: #212121;">for love</h2>
-                      <br />
-                      <div class="container">
-                            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5y367Rv" class="button is-success shadowbg4"
-                            style="width: 48%; float: left; color: #212121; font-size: 1.2rem; background-color: #4FC3F7; border-radius: 0.5rem;"> <i class="fab fa-qq"
-                              style="color: #263238; margin: 0 0.3em;"></i>QQ </a>
-                          <a target="_blank" href="###" class="button is-success shadowbg5"
-                            style="width: 48%; float: right; color: #212121; font-size: 1.2rem; background-color: #F06292; border-radius: 0.5rem;"> <i
-                              class="fab fa-discord" style="color: #263238; margin: 0 0.3em;"></i>Discord </a>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="hero">
-                  <div class="hero-body">
-                    <div class="container">
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</body>
-<script>
-  $(document).ready(function () {
-    $('#pagepiling').pagepiling();
-  });
-</script>
-
+    </body>
 </html>
