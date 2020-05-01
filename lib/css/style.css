@@ -54,7 +54,6 @@ h1,h2{
     display: flex;
     justify-content: center;
     overflow-y: hidden;
-    box-shadow: #212121 0.1em 0.1em 0.2em;
 }
 
 .nav-box{
@@ -129,7 +128,6 @@ h1,h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: #212121 -0.1em -0.1em 0.2em;
 }
 
 .box-2{
@@ -155,21 +153,25 @@ h1,h2{
 .map{
     background-color: #D7CCC8;
     color: #4E342E;
+    box-shadow: #212121 -0.1em 0.1em 0.2em;
 }
 
 .docs{
     background-color: #B2DFDB;
     color: #00695C;
+    box-shadow: #212121 0.1em 0.1em 0.2em;
 }
 
 .discord{
     background-color: #C5CAE9;
     color: #283593;
+    box-shadow: #212121 -0.1em 0.1em 0.2em;
 }
 
 .qq{
     background-color: #B3E5FC;
     color: #0277BD;
+    box-shadow: #212121 0.1em 0.1em 0.2em;
 }
 
 .duck-logo{
