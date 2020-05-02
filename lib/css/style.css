@@ -116,10 +116,12 @@ h1,h2{
 .card-title{
     margin-top: 1rem;
     color: #ecf0f1;
+    text-align: center;
 }
 
 .card-subtitle{
     color: #ecf0f1;
+    text-align: center;
 }
 
 .footer{
