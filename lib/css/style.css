@@ -82,7 +82,7 @@ h1,h2{
 }
 
 .main{
-    height: 90vh;
+    height: 75vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -126,7 +126,7 @@ h1,h2{
 }
 
 .footer{
-    height: 10vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -142,10 +142,10 @@ h1,h2{
 }
 
 .button{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
