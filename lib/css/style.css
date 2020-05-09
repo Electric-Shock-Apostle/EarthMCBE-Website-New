@@ -4,7 +4,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior:smooth;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 h1,h2{
@@ -98,6 +98,7 @@ h1,h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: #212121 0.1em 0.1em 0.2em;
 }
 
 .newera-logo{
@@ -132,6 +133,7 @@ h1,h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: #212121 0.1em -0.1em 0.2em;
 }
 
 .box-2{
@@ -144,36 +146,42 @@ h1,h2{
 
 .button{
     font-size: 2rem;
-    color: #fff;
     height: 4rem;
     width: 4rem;
-    border-radius: 50%;
-    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .map{
-    background-color: #B2DFDB;
+    background-color: #F5F5F5;
     color: #00695C;
     box-shadow: #212121 -0.1em 0.1em 0.2em;
 }
 
 .docs{
-    background-color: #D7CCC8;
+    background-color: #F5F5F5;
     color: #4E342E;
     box-shadow: #212121 0.1em 0.1em 0.2em;
 }
 
 .discord{
-    background-color: #C5CAE9;
+    background-color: #F5F5F5;
     color: #283593;
     box-shadow: #212121 -0.1em 0.1em 0.2em;
 }
 
 .qq{
-    background-color: #B3E5FC;
+    background-color: #F5F5F5;
     color: #0277BD;
     box-shadow: #212121 0.1em 0.1em 0.2em;
 }
