@@ -37,7 +37,7 @@
 .footer{
     height: 12vh;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -48,7 +48,7 @@ a{
 }
 
 .button{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .map{
