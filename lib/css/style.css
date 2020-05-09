@@ -98,7 +98,6 @@ h1,h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: #212121 0.1em 0.1em 0.2em;
 }
 
 .newera-logo{
