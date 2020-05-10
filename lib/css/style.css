@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.page1{
+.page{
     background-image: linear-gradient(to bottom right, #FFCCBC, #C8E6C9, #BBDEFB);
 }
 
@@ -34,11 +34,20 @@
     flex-direction: column;
 }
 
+.start{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .footer{
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 a{
@@ -47,16 +56,21 @@ a{
     text-decoration:none;
 }
 
+p{
+    color: rgb(33, 33, 33);
+    font-size: 18px;
+}
+
 .button{
     font-size: 30px;
 }
 
 .map{
-    color: #795548;
+    color: #009688;
 }
 
 .docs{
-    color: #009688;
+    color: #795548;
 }
 
 .discord{
@@ -65,4 +79,27 @@ a{
 
 .qq{
     color: #03A9F4;
+}
+
+.page2{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
