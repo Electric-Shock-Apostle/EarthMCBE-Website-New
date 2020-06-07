@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E.S.Apostle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <style>
+        .cover-main{
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: #FAFAFA;
+        }
+
+        .cover-link{
+            height: 35vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #212121;
+        }
+
+        .cover-foot{
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #212121;
+        }
+
+        .btn-bili{
+            color: #EC407A;
+        }
+
+        .btn-qq{
+            color: #29B6F6;
+        }
+        .btn-map{
+            color: #26A69A;
+        }
+        .btn-donate{
+            color: #FFA726;
+        }
+    </style>
+
+    <div class="container-fluid cover-main">
+        
+        <h1 class="display-1">Multidime</h1>
+        <h2>Creat Your Planet</h2>
+    </div>
+
+    <div class="container-fluid cover-link">
+        <div class="btn-group btn-group-lg">
+            <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=cwf0tuYz" class="btn btn-light btn-qq">
+                <i class="fab fa-qq"></i>
+            </a>
+            <button type="button" class="btn btn-bili btn-light" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-play"></i>
+            </button>
+            <a target="_blank" href="donate/" class="btn btn-donate btn-light">
+                <i class="fa fa-heart"></i>
+            </a>
+            <a target="_blank" href="http://map.esagames.club/" class="btn btn-map btn-light">
+                <i class="fa fa-map"></i>
+            </a>
+          </div>
+    </div>
+
+<!-- 模态框 -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">Video by FairCanying7906</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div style="height: 50vh;" class="modal-body">
+            <iframe style="width: 100%; height: 100%;" src="//player.bilibili.com/player.html?aid=328410040&bvid=BV1wA411B7ff&cid=198298067&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+
+    <div class="container-fluid cover-foot text-secondary">
+        <p>&copy; E.S.Apostle | by nowcube</p>
+    </div>
+</body>
+</html>
